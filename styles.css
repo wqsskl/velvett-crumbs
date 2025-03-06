@@ -1,0 +1,158 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Заголовок и меню */
+header {
+    background-color: #9c27b0;
+    color: white;
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Герой-секция */
+#hero {
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Секции */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#menu ul li {
+    margin: 5px 0;
+}
+
+/* Футер */
+footer {
+    background-color: #9c27b0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Стили для изображений */
+.about-images, .menu-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(158, 36, 142, 0.747);
+}
+
+.image-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #a01111;
+    font-style: italic;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-images, .menu-images {
+        flex-direction: column;
+    }
+}
